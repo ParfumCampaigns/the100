@@ -36,7 +36,6 @@ canvas#globe { width: 100%; display: block; }
   <h1>The <em>100</em></h1>
   <p class="subtitle">The Definitive Record of the Greatest Male Models in History</p>
   <p class="intro">One hundred names. Spin the globe. Click any name to enter the archive. James Conrad, Editor.</p>
-
   <p style="font-family:'Helvetica Neue',Arial,sans-serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#333;margin-bottom:1rem;">Drag to spin · Click any name to explore</p>
 
   <div class="globe-wrap">
@@ -67,106 +66,106 @@ canvas#globe { width: 100%; display: block; }
 
 <script>
 const models = [
-  { rank: 1, name: "David Gandy", campaigns: "Dolce & Gabbana · Light Blue · Marks & Spencer", lat: 51, lon: -0 },
-  { rank: 2, name: "Michael Flinn", campaigns: "Hugo Boss · Boss Fragrance · Hugo Menswear", lat: 34, lon: -118 },
-  { rank: 3, name: "Mark Vanderloo", campaigns: "Hugo Boss · Calvin Klein · Valentino", lat: 52, lon: 5 },
-  { rank: 4, name: "Sean O'Pry", campaigns: "Calvin Klein · Versace · H&M", lat: 33, lon: -84 },
-  { rank: 5, name: "Marcus Schenkenberg", campaigns: "Calvin Klein Underwear · CK Jeans · Versace", lat: 59, lon: 18 },
-  { rank: 6, name: "Tyson Beckford", campaigns: "Polo Ralph Lauren · RL Sport · RL Fragrance", lat: 18, lon: -77 },
-  { rank: 7, name: "Jeff Aquilon", campaigns: "Calvin Klein · Perry Ellis · Versace", lat: 34, lon: -119 },
-  { rank: 8, name: "Tyson Ballou", campaigns: "Versace · Dolce & Gabbana · Jil Sander", lat: 30, lon: -97 },
-  { rank: 9, name: "Alton Mason", campaigns: "Chanel · luxury fashion · fragrance", lat: 40, lon: -74 },
-  { rank: 10, name: "Jon Kortajarena", campaigns: "Armani · Tom Ford · fragrance", lat: 43, lon: -3 },
-  { rank: 11, name: "Lucky Blue Smith", campaigns: "Tommy Hilfiger · menswear · youth", lat: 40, lon: -112 },
-  { rank: 12, name: "Noah Mills", campaigns: "Dolce & Gabbana · fragrance · menswear", lat: 43, lon: -79 },
-  { rank: 13, name: "Bruce Hulse", campaigns: "Men's Fitness · GQ · catalog", lat: 42, lon: -71 },
-  { rank: 14, name: "Matt Norklun", campaigns: "Fitness brands · catalog · lifestyle", lat: 45, lon: -93 },
-  { rank: 15, name: "Werner Schreyer", campaigns: "GUESS global · European fashion · fragrance", lat: 48, lon: 11 },
-  { rank: 16, name: "Terrence Sheahan", campaigns: "Lifestyle apparel · catalog · menswear", lat: 41, lon: -87 },
-  { rank: 17, name: "Tony Spinelli", campaigns: "Fitness brands · athletic apparel · print", lat: 34, lon: -118 },
-  { rank: 18, name: "Michael Ives", campaigns: "Ralph Lauren · lifestyle apparel · menswear", lat: 37, lon: -122 },
-  { rank: 19, name: "Michael Bergin", campaigns: "Calvin Klein Underwear · Liz Claiborne · CK Jeans", lat: 41, lon: -73 },
-  { rank: 20, name: "Walter Schupfer", campaigns: "European luxury fashion · fragrance · menswear", lat: 47, lon: 8 },
-  { rank: 21, name: "Cameron Alborzian", campaigns: "GUESS global · lifestyle apparel · menswear", lat: 35, lon: 51 },
-  { rank: 22, name: "John Pearson", campaigns: "Fragrance · British menswear · luxury print", lat: 51, lon: -1 },
-  { rank: 23, name: "Antonio Sabato Jr.", campaigns: "Calvin Klein Obsession · CK Jeans · fragrance", lat: 41, lon: 12 },
-  { rank: 24, name: "Ric Arango", campaigns: "Calvin Klein Obsession · CK Fragrance · CK print", lat: 25, lon: -80 },
-  { rank: 25, name: "Alex Lundqvist", campaigns: "Estée Lauder Men · GUESS · grooming", lat: 57, lon: 12 },
-  { rank: 26, name: "Tony Ward", campaigns: "Versace · fashion print · fragrance", lat: 39, lon: -76 },
-  { rank: 27, name: "Hoyt Richards", campaigns: "Polo Ralph Lauren · lifestyle · menswear", lat: 40, lon: -75 },
-  { rank: 28, name: "Joel West", campaigns: "Versace · 1990s fashion · menswear", lat: 34, lon: -117 },
-  { rank: 29, name: "Larry Scott", campaigns: "Acqua di Giò · fragrance print · menswear", lat: 38, lon: -77 },
-  { rank: 30, name: "David Boals", campaigns: "American lifestyle · menswear · print", lat: 29, lon: -95 },
-  { rank: 31, name: "Simon Nessman", campaigns: "Giorgio Armani · Armani Fragrance · menswear", lat: 49, lon: -123 },
-  { rank: 32, name: "Marlon Teixeira", campaigns: "Armani Exchange · Dior · menswear", lat: -23, lon: -46 },
-  { rank: 33, name: "Evandro Soldati", campaigns: "Armani Exchange · AX Fragrance · menswear", lat: -30, lon: -51 },
-  { rank: 34, name: "Brad Kroenig", campaigns: "Chanel · Chanel accessories · fragrance", lat: 37, lon: -121 },
-  { rank: 35, name: "Garrett Neff", campaigns: "Calvin Klein · CK Fragrance · menswear", lat: 39, lon: -75 },
-  { rank: 36, name: "Clément Chabernaud", campaigns: "Prada · Prada Fragrance · luxury menswear", lat: 48, lon: 2 },
-  { rank: 37, name: "Lars Burmeister", campaigns: "Hugo Boss · Boss Fragrance · menswear", lat: 53, lon: 10 },
-  { rank: 38, name: "Johannes Huebl", campaigns: "Ralph Lauren · lifestyle apparel · fragrance", lat: 52, lon: 13 },
-  { rank: 39, name: "Baptiste Giabiconi", campaigns: "Chanel · Chanel Fragrance · accessories", lat: 43, lon: 6 },
-  { rank: 40, name: "Nacho Figueras", campaigns: "Polo Ralph Lauren · lifestyle · fragrance", lat: -34, lon: -58 },
-  { rank: 41, name: "Gabriel Aubry", campaigns: "Chanel · Givenchy · menswear", lat: 45, lon: -73 },
-  { rank: 42, name: "Oriol Elcacho", campaigns: "Gucci · luxury menswear · fragrance", lat: 41, lon: 2 },
-  { rank: 43, name: "Andres Velencoso", campaigns: "Chanel · Louis Vuitton · fragrance", lat: 39, lon: -1 },
-  { rank: 44, name: "Chad White", campaigns: "Hugo Boss · fragrance · menswear", lat: 33, lon: -86 },
-  { rank: 45, name: "Jason Shaw", campaigns: "US campaigns · menswear · fragrance", lat: 36, lon: -86 },
-  { rank: 46, name: "Ben Hill", campaigns: "Lifestyle catalog · menswear · print", lat: 32, lon: -86 },
-  { rank: 47, name: "David Fumero", campaigns: "Fashion campaigns · lifestyle · menswear", lat: 23, lon: -82 },
-  { rank: 48, name: "Jack Scalia", campaigns: "Catalog campaigns · lifestyle apparel · menswear", lat: 40, lon: -74 },
-  { rank: 49, name: "Matt McColm", campaigns: "Ralph Lauren Chaps · lifestyle apparel · menswear", lat: 35, lon: -80 },
-  { rank: 50, name: "Fabio Lanzoni", campaigns: "Romance cover campaigns · lifestyle · menswear", lat: 44, lon: 11 },
-  { rank: 51, name: "Boris Kodjoe", campaigns: "Versace · fashion print · menswear", lat: 5, lon: -0 },
-  { rank: 52, name: "Godfrey Gao", campaigns: "Louis Vuitton · Asian luxury · menswear", lat: 25, lon: 121 },
-  { rank: 53, name: "Broderick Hunter", campaigns: "Ralph Lauren · fragrance · menswear", lat: 32, lon: -97 },
-  { rank: 54, name: "Hu Bing", campaigns: "Louis Vuitton · Chinese luxury · menswear", lat: 31, lon: 121 },
-  { rank: 55, name: "Oliver Cheshire", campaigns: "Calvin Klein · Missoni · Hollister", lat: 51, lon: -0.5 },
-  { rank: 56, name: "Jordan Barrett", campaigns: "Tom Ford · fragrance · menswear", lat: -28, lon: 153 },
-  { rank: 57, name: "Kit Butler", campaigns: "Dolce & Gabbana · Gucci · Tommy Hilfiger", lat: 52, lon: -2 },
-  { rank: 58, name: "Francisco Lachowski", campaigns: "Prada · Dior · menswear", lat: -25, lon: -49 },
-  { rank: 59, name: "Tobias Sorensen", campaigns: "Versace · Dolce & Gabbana · fragrance", lat: 55, lon: 12 },
-  { rank: 60, name: "Leon Dame", campaigns: "Maison Margiela · luxury fashion · menswear", lat: 52, lon: 9 },
-  { rank: 61, name: "Jamie Dornan", campaigns: "Hugo Boss · Dior Homme · Calvin Klein", lat: 54, lon: -6 },
-  { rank: 62, name: "Fernando Lindez", campaigns: "Spanish luxury youth · menswear · fragrance", lat: 40, lon: -4 },
-  { rank: 63, name: "Pietro Boselli", campaigns: "Armani · menswear · fragrance", lat: 45, lon: 11 },
-  { rank: 64, name: "Alexandre Cunha", campaigns: "Balmain · luxury fashion · menswear", lat: -8, lon: -35 },
-  { rank: 65, name: "Ivan de Pineda", campaigns: "Latin American luxury · menswear · lifestyle", lat: -34, lon: -64 },
-  { rank: 66, name: "Tim Easton", campaigns: "Versace · fashion print · menswear", lat: 53, lon: -1 },
-  { rank: 67, name: "Enrique Palacios", campaigns: "Tommy Hilfiger · fragrance · menswear", lat: 40, lon: -3 },
-  { rank: 68, name: "Tomas Skoloudik", campaigns: "Armani · menswear · fragrance", lat: 50, lon: 14 },
-  { rank: 69, name: "Sterling St. Jacques", campaigns: "1970s disco-era campaigns · menswear", lat: 40, lon: -73 },
-  { rank: 70, name: "Adonis Bosso", campaigns: "Givenchy · luxury menswear · fragrance", lat: 5, lon: -4 },
-  { rank: 71, name: "Bill Curry", campaigns: "Armani · Valentino · Eddie Bauer global", lat: 45, lon: -122 },
-  { rank: 72, name: "Renauld White", campaigns: "Perry Ellis · GQ campaigns · menswear", lat: 38, lon: -77 },
-  { rank: 73, name: "Albert Delegue", campaigns: "European fashion · menswear · fragrance", lat: 48, lon: 2 },
-  { rank: 74, name: "Michel de Windt", campaigns: "Fragrance campaigns · menswear · lifestyle", lat: 52, lon: 4 },
-  { rank: 75, name: "Bob Menna", campaigns: "1970s fashion campaigns · lifestyle · menswear", lat: 40, lon: -74 },
-  { rank: 76, name: "Greg Hanson", campaigns: "Catalog mega-distribution · lifestyle · menswear", lat: 44, lon: -93 },
-  { rank: 77, name: "Richard Biedul", campaigns: "Tailoring campaigns · British menswear · fragrance", lat: 53, lon: -2 },
-  { rank: 78, name: "Andrea Boccaletti", campaigns: "Dior · Italian luxury fashion · Model Plan Milan", lat: 45, lon: 9 },
-  { rank: 79, name: "Jeffrey Brezovar", campaigns: "Fragrance campaigns · menswear print · lifestyle", lat: 41, lon: -88 },
-  { rank: 80, name: "Derek Brewer", campaigns: "Lifestyle apparel · print campaigns · menswear", lat: 38, lon: -90 },
-  { rank: 81, name: "Keith Brewer", campaigns: "Catalog campaigns · lifestyle apparel · menswear", lat: 38, lon: -92 },
-  { rank: 82, name: "Brian Buzzini", campaigns: "Fitness apparel · lifestyle print · Davidoff Cool Water", lat: 34, lon: -118 },
-  { rank: 83, name: "Mike Campbell", campaigns: "1980s fashion campaigns · lifestyle · menswear", lat: 37, lon: -122 },
-  { rank: 84, name: "John Foster", campaigns: "Versace · International Male · fragrance", lat: 33, lon: -112 },
-  { rank: 85, name: "Nick Constantino", campaigns: "1980s fashion print · menswear · lifestyle", lat: 40, lon: -74 },
-  { rank: 86, name: "Brett Salisbury", campaigns: "Nokia global · Nexxus Hair global · Laura Biagiotti", lat: 60, lon: 25 },
-  { rank: 87, name: "Brett Hollands", campaigns: "Print-commercial campaigns · menswear · lifestyle", lat: -33, lon: 151 },
-  { rank: 88, name: "Rick Edwards", campaigns: "British fashion campaigns · menswear · fragrance", lat: 51, lon: -2 },
-  { rank: 89, name: "Jose Maria Manzanares", campaigns: "Luxury lifestyle · menswear · fragrance", lat: 37, lon: -6 },
-  { rank: 90, name: "Tim Boyce", campaigns: "Giorgio Armani · Gianfranco Ferré · Levi's global", lat: 49, lon: -2 },
-  { rank: 91, name: "Alessio Pozzi", campaigns: "Givenchy · Armani · Versace", lat: 44, lon: 8 },
-  { rank: 92, name: "Paul Palmero", campaigns: "European fashion · menswear · fragrance", lat: 48, lon: 2 },
-  { rank: 93, name: "Richard Popejoy", campaigns: "GQ · Ford Models · catalog mega-distribution", lat: 39, lon: -77 },
-  { rank: 94, name: "Marco de Conciliis", campaigns: "Calvin Klein · European lifestyle · menswear", lat: 49, lon: -123 },
-  { rank: 95, name: "Sebastian Sauve", campaigns: "Verified major commercial campaigns · menswear", lat: 45, lon: -75 },
-  { rank: 96, name: "Kerry Degman", campaigns: "Major commercial campaigns · menswear · fragrance", lat: 41, lon: -81 },
-  { rank: 97, name: "Arthur Kulkov", campaigns: "Major commercial campaigns · menswear · lifestyle", lat: 55, lon: 37 },
-  { rank: 98, name: "Karl Lindman", campaigns: "Commercial campaigns · menswear · lifestyle", lat: 59, lon: 18 },
-  { rank: 99, name: "Rick Dietz", campaigns: "Commercial campaigns · menswear", lat: 34, lon: -118 },
-  { rank: 100, name: "Tomas Valdemar Hintnaus", campaigns: "Calvin Klein Underwear · CK Jeans · menswear", lat: -15, lon: -47 }
+  { rank: 1, name: "David Gandy", campaigns: "Dolce & Gabbana · Light Blue · Marks & Spencer", lat: 72, lon: -20 },
+  { rank: 2, name: "Michael Flinn", campaigns: "Hugo Boss · Boss Fragrance · Hugo Menswear", lat: -15, lon: -150 },
+  { rank: 3, name: "Mark Vanderloo", campaigns: "Hugo Boss · Calvin Klein · Valentino", lat: 38, lon: 60 },
+  { rank: 4, name: "Sean O'Pry", campaigns: "Calvin Klein · Versace · H&M", lat: -55, lon: 30 },
+  { rank: 5, name: "Marcus Schenkenberg", campaigns: "Calvin Klein Underwear · CK Jeans · Versace", lat: 20, lon: 140 },
+  { rank: 6, name: "Tyson Beckford", campaigns: "Polo Ralph Lauren · RL Sport · RL Fragrance", lat: 65, lon: 100 },
+  { rank: 7, name: "Jeff Aquilon", campaigns: "Calvin Klein · Perry Ellis · Versace", lat: -40, lon: -70 },
+  { rank: 8, name: "Tyson Ballou", campaigns: "Versace · Dolce & Gabbana · Jil Sander", lat: 50, lon: -140 },
+  { rank: 9, name: "Alton Mason", campaigns: "Chanel · luxury fashion · fragrance", lat: -70, lon: 80 },
+  { rank: 10, name: "Jon Kortajarena", campaigns: "Armani · Tom Ford · fragrance", lat: 25, lon: -60 },
+  { rank: 11, name: "Lucky Blue Smith", campaigns: "Tommy Hilfiger · menswear · youth", lat: 78, lon: 60 },
+  { rank: 12, name: "Noah Mills", campaigns: "Dolce & Gabbana · fragrance · menswear", lat: -25, lon: 130 },
+  { rank: 13, name: "Bruce Hulse", campaigns: "Men's Fitness · GQ · catalog", lat: 55, lon: -80 },
+  { rank: 14, name: "Matt Norklun", campaigns: "Fitness brands · catalog · lifestyle", lat: -60, lon: -120 },
+  { rank: 15, name: "Werner Schreyer", campaigns: "GUESS global · European fashion · fragrance", lat: 10, lon: 170 },
+  { rank: 16, name: "Terrence Sheahan", campaigns: "Lifestyle apparel · catalog · menswear", lat: 68, lon: -150 },
+  { rank: 17, name: "Tony Spinelli", campaigns: "Fitness brands · athletic apparel · print", lat: -35, lon: 20 },
+  { rank: 18, name: "Michael Ives", campaigns: "Ralph Lauren · lifestyle apparel · menswear", lat: 42, lon: -170 },
+  { rank: 19, name: "Michael Bergin", campaigns: "Calvin Klein Underwear · Liz Claiborne · CK Jeans", lat: -8, lon: 50 },
+  { rank: 20, name: "Walter Schupfer", campaigns: "European luxury fashion · fragrance · menswear", lat: 60, lon: 40 },
+  { rank: 21, name: "Cameron Alborzian", campaigns: "GUESS global · lifestyle apparel · menswear", lat: -50, lon: 160 },
+  { rank: 22, name: "John Pearson", campaigns: "Fragrance · British menswear · luxury print", lat: 30, lon: -110 },
+  { rank: 23, name: "Antonio Sabato Jr.", campaigns: "Calvin Klein Obsession · CK Jeans · fragrance", lat: 75, lon: -60 },
+  { rank: 24, name: "Ric Arango", campaigns: "Calvin Klein Obsession · CK Fragrance · CK print", lat: -20, lon: -30 },
+  { rank: 25, name: "Alex Lundqvist", campaigns: "Estée Lauder Men · GUESS · grooming", lat: 48, lon: 120 },
+  { rank: 26, name: "Tony Ward", campaigns: "Versace · fashion print · fragrance", lat: -65, lon: -40 },
+  { rank: 27, name: "Hoyt Richards", campaigns: "Polo Ralph Lauren · lifestyle · menswear", lat: 15, lon: -90 },
+  { rank: 28, name: "Joel West", campaigns: "Versace · 1990s fashion · menswear", lat: 62, lon: 160 },
+  { rank: 29, name: "Larry Scott", campaigns: "Acqua di Giò · fragrance print · menswear", lat: -45, lon: 90 },
+  { rank: 30, name: "David Boals", campaigns: "American lifestyle · menswear · print", lat: 35, lon: -30 },
+  { rank: 31, name: "Simon Nessman", campaigns: "Giorgio Armani · Armani Fragrance · menswear", lat: -10, lon: -160 },
+  { rank: 32, name: "Marlon Teixeira", campaigns: "Armani Exchange · Dior · menswear", lat: 58, lon: -120 },
+  { rank: 33, name: "Evandro Soldati", campaigns: "Armani Exchange · AX Fragrance · menswear", lat: -30, lon: 70 },
+  { rank: 34, name: "Brad Kroenig", campaigns: "Chanel · Chanel accessories · fragrance", lat: 80, lon: 120 },
+  { rank: 35, name: "Garrett Neff", campaigns: "Calvin Klein · CK Fragrance · menswear", lat: -55, lon: -90 },
+  { rank: 36, name: "Clément Chabernaud", campaigns: "Prada · Prada Fragrance · luxury menswear", lat: 22, lon: 30 },
+  { rank: 37, name: "Lars Burmeister", campaigns: "Hugo Boss · Boss Fragrance · menswear", lat: -75, lon: 140 },
+  { rank: 38, name: "Johannes Huebl", campaigns: "Ralph Lauren · lifestyle apparel · fragrance", lat: 45, lon: -50 },
+  { rank: 39, name: "Baptiste Giabiconi", campaigns: "Chanel · Chanel Fragrance · accessories", lat: -18, lon: 110 },
+  { rank: 40, name: "Nacho Figueras", campaigns: "Polo Ralph Lauren · lifestyle · fragrance", lat: 70, lon: -100 },
+  { rank: 41, name: "Gabriel Aubry", campaigns: "Chanel · Givenchy · menswear", lat: -42, lon: -150 },
+  { rank: 42, name: "Oriol Elcacho", campaigns: "Gucci · luxury menswear · fragrance", lat: 32, lon: 150 },
+  { rank: 43, name: "Andres Velencoso", campaigns: "Chanel · Louis Vuitton · fragrance", lat: -62, lon: 60 },
+  { rank: 44, name: "Chad White", campaigns: "Hugo Boss · fragrance · menswear", lat: 18, lon: -130 },
+  { rank: 45, name: "Jason Shaw", campaigns: "US campaigns · menswear · fragrance", lat: 55, lon: 10 },
+  { rank: 46, name: "Ben Hill", campaigns: "Lifestyle catalog · menswear · print", lat: -28, lon: -60 },
+  { rank: 47, name: "David Fumero", campaigns: "Fashion campaigns · lifestyle · menswear", lat: 40, lon: 90 },
+  { rank: 48, name: "Jack Scalia", campaigns: "Catalog campaigns · lifestyle apparel · menswear", lat: -72, lon: -10 },
+  { rank: 49, name: "Matt McColm", campaigns: "Ralph Lauren Chaps · lifestyle apparel · menswear", lat: 28, lon: -170 },
+  { rank: 50, name: "Fabio Lanzoni", campaigns: "Romance cover campaigns · lifestyle · menswear", lat: 65, lon: -40 },
+  { rank: 51, name: "Boris Kodjoe", campaigns: "Versace · fashion print · menswear", lat: -48, lon: 130 },
+  { rank: 52, name: "Godfrey Gao", campaigns: "Louis Vuitton · Asian luxury · menswear", lat: 12, lon: 50 },
+  { rank: 53, name: "Broderick Hunter", campaigns: "Ralph Lauren · fragrance · menswear", lat: 72, lon: 40 },
+  { rank: 54, name: "Hu Bing", campaigns: "Louis Vuitton · Chinese luxury · menswear", lat: -35, lon: -110 },
+  { rank: 55, name: "Oliver Cheshire", campaigns: "Calvin Klein · Missoni · Hollister", lat: 50, lon: 170 },
+  { rank: 56, name: "Jordan Barrett", campaigns: "Tom Ford · fragrance · menswear", lat: -15, lon: -80 },
+  { rank: 57, name: "Kit Butler", campaigns: "Dolce & Gabbana · Gucci · Tommy Hilfiger", lat: 38, lon: -140 },
+  { rank: 58, name: "Francisco Lachowski", campaigns: "Prada · Dior · menswear", lat: -58, lon: -160 },
+  { rank: 59, name: "Tobias Sorensen", campaigns: "Versace · Dolce & Gabbana · fragrance", lat: 25, lon: 80 },
+  { rank: 60, name: "Leon Dame", campaigns: "Maison Margiela · luxury fashion · menswear", lat: -22, lon: 160 },
+  { rank: 61, name: "Jamie Dornan", campaigns: "Hugo Boss · Dior Homme · Calvin Klein", lat: 60, lon: -60 },
+  { rank: 62, name: "Fernando Lindez", campaigns: "Spanish luxury youth · menswear · fragrance", lat: -40, lon: 40 },
+  { rank: 63, name: "Pietro Boselli", campaigns: "Armani · menswear · fragrance", lat: 15, lon: 120 },
+  { rank: 64, name: "Alexandre Cunha", campaigns: "Balmain · luxury fashion · menswear", lat: -68, lon: -80 },
+  { rank: 65, name: "Ivan de Pineda", campaigns: "Latin American luxury · menswear · lifestyle", lat: 45, lon: 30 },
+  { rank: 66, name: "Tim Easton", campaigns: "Versace · fashion print · menswear", lat: -5, lon: -120 },
+  { rank: 67, name: "Enrique Palacios", campaigns: "Tommy Hilfiger · fragrance · menswear", lat: 68, lon: -170 },
+  { rank: 68, name: "Tomas Skoloudik", campaigns: "Armani · menswear · fragrance", lat: -50, lon: -30 },
+  { rank: 69, name: "Sterling St. Jacques", campaigns: "1970s disco-era campaigns · menswear", lat: 32, lon: -90 },
+  { rank: 70, name: "Adonis Bosso", campaigns: "Givenchy · luxury menswear · fragrance", lat: -25, lon: 0 },
+  { rank: 71, name: "Bill Curry", campaigns: "Armani · Valentino · Eddie Bauer global", lat: 55, lon: -160 },
+  { rank: 72, name: "Renauld White", campaigns: "Perry Ellis · GQ campaigns · menswear", lat: 8, lon: 160 },
+  { rank: 73, name: "Albert Delegue", campaigns: "European fashion · menswear · fragrance", lat: -60, lon: 110 },
+  { rank: 74, name: "Michel de Windt", campaigns: "Fragrance campaigns · menswear · lifestyle", lat: 42, lon: -20 },
+  { rank: 75, name: "Bob Menna", campaigns: "1970s fashion campaigns · lifestyle · menswear", lat: -12, lon: -40 },
+  { rank: 76, name: "Greg Hanson", campaigns: "Catalog mega-distribution · lifestyle · menswear", lat: 75, lon: 160 },
+  { rank: 77, name: "Richard Biedul", campaigns: "Tailoring campaigns · British menswear · fragrance", lat: -45, lon: -170 },
+  { rank: 78, name: "Andrea Boccaletti", campaigns: "Dior · Italian luxury fashion · Model Plan Milan", lat: 28, lon: 110 },
+  { rank: 79, name: "Jeffrey Brezovar", campaigns: "Fragrance campaigns · menswear print · lifestyle", lat: -70, lon: -130 },
+  { rank: 80, name: "Derek Brewer", campaigns: "Lifestyle apparel · print campaigns · menswear", lat: 52, lon: -100 },
+  { rank: 81, name: "Keith Brewer", campaigns: "Catalog campaigns · lifestyle apparel · menswear", lat: -32, lon: 140 },
+  { rank: 82, name: "Brian Buzzini", campaigns: "Fitness apparel · lifestyle print · Davidoff Cool Water", lat: 18, lon: -50 },
+  { rank: 83, name: "Mike Campbell", campaigns: "1980s fashion campaigns · lifestyle · menswear", lat: 62, lon: -20 },
+  { rank: 84, name: "John Foster", campaigns: "Versace · International Male · fragrance", lat: -38, lon: -90 },
+  { rank: 85, name: "Nick Constantino", campaigns: "1980s fashion print · menswear · lifestyle", lat: 35, lon: 170 },
+  { rank: 86, name: "Brett Salisbury", campaigns: "Nokia global · Nexxus Hair global · Laura Biagiotti", lat: -8, lon: 20 },
+  { rank: 87, name: "Brett Hollands", campaigns: "Print-commercial campaigns · menswear · lifestyle", lat: 48, lon: -80 },
+  { rank: 88, name: "Rick Edwards", campaigns: "British fashion campaigns · menswear · fragrance", lat: -55, lon: 60 },
+  { rank: 89, name: "Jose Maria Manzanares", campaigns: "Luxury lifestyle · menswear · fragrance", lat: 20, lon: -10 },
+  { rank: 90, name: "Tim Boyce", campaigns: "Giorgio Armani · Gianfranco Ferré · Levi's global", lat: -20, lon: 90 },
+  { rank: 91, name: "Alessio Pozzi", campaigns: "Givenchy · Armani · Versace", lat: 70, lon: -130 },
+  { rank: 92, name: "Paul Palmero", campaigns: "European fashion · menswear · fragrance", lat: -48, lon: -50 },
+  { rank: 93, name: "Richard Popejoy", campaigns: "GQ · Ford Models · catalog mega-distribution", lat: 38, lon: -60 },
+  { rank: 94, name: "Marco de Conciliis", campaigns: "Calvin Klein · European lifestyle · menswear", lat: -15, lon: 130 },
+  { rank: 95, name: "Sebastian Sauve", campaigns: "Verified major commercial campaigns · menswear", lat: 58, lon: 80 },
+  { rank: 96, name: "Kerry Degman", campaigns: "Major commercial campaigns · menswear · fragrance", lat: -38, lon: 170 },
+  { rank: 97, name: "Arthur Kulkov", campaigns: "Major commercial campaigns · menswear · lifestyle", lat: 25, lon: -150 },
+  { rank: 98, name: "Karl Lindman", campaigns: "Commercial campaigns · menswear · lifestyle", lat: -65, lon: 30 },
+  { rank: 99, name: "Rick Dietz", campaigns: "Commercial campaigns · menswear", lat: 42, lon: 140 },
+  { rank: 100, name: "Tomas Valdemar Hintnaus", campaigns: "Calvin Klein Underwear · CK Jeans · menswear", lat: -28, lon: -140 }
 ];
 
 const canvas = document.getElementById('globe');
@@ -211,16 +210,14 @@ function project(p) {
 function draw() {
   ctx.clearRect(0, 0, W, H);
 
-  // Globe circle
   ctx.beginPath();
   ctx.arc(cx, cy, R, 0, Math.PI * 2);
-  ctx.strokeStyle = 'rgba(255,255,255,0.04)';
+  ctx.strokeStyle = 'rgba(255,255,255,0.05)';
   ctx.lineWidth = 0.5;
   ctx.stroke();
-  ctx.fillStyle = 'rgba(255,255,255,0.012)';
+  ctx.fillStyle = 'rgba(255,255,255,0.02)';
   ctx.fill();
 
-  // Grid lines
   for (let lat = -80; lat <= 80; lat += 20) {
     ctx.beginPath();
     let first = true;
@@ -231,7 +228,7 @@ function draw() {
       const p = project(r);
       if (first) { ctx.moveTo(p.sx, p.sy); first = false; } else ctx.lineTo(p.sx, p.sy);
     }
-    ctx.strokeStyle = 'rgba(200,184,154,0.06)';
+    ctx.strokeStyle = 'rgba(200,184,154,0.07)';
     ctx.lineWidth = 0.3;
     ctx.stroke();
   }
@@ -245,55 +242,51 @@ function draw() {
       const p = project(r);
       if (first) { ctx.moveTo(p.sx, p.sy); first = false; } else ctx.lineTo(p.sx, p.sy);
     }
-    ctx.strokeStyle = 'rgba(200,184,154,0.06)';
+    ctx.strokeStyle = 'rgba(200,184,154,0.07)';
     ctx.lineWidth = 0.3;
     ctx.stroke();
   }
 
-  // Center text
-  const pulse = 0.08 + 0.02 * Math.sin(rot * 0.4);
+  // Center text — much lighter
   ctx.save();
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.fillStyle = `rgba(200,184,154,${pulse * 1.5})`;
+  ctx.fillStyle = 'rgba(200,184,154,0.55)';
   ctx.font = `400 ${Math.floor(R * 0.1)}px Helvetica Neue, Arial, sans-serif`;
-  ctx.fillText('MALEICONIC', cx, cy - R * 0.12);
-  ctx.fillStyle = `rgba(255,255,255,${pulse * 1.2})`;
-  ctx.font = `700 ${Math.floor(R * 0.18)}px Georgia, serif`;
+  ctx.fillText('MALEICONIC', cx, cy - R * 0.14);
+  ctx.fillStyle = 'rgba(255,255,255,0.65)';
+  ctx.font = `700 ${Math.floor(R * 0.2)}px Georgia, serif`;
   ctx.fillText('THE 100', cx, cy + R * 0.08);
   ctx.restore();
 
-  // Model name nodes
   models.forEach((m, i) => {
     const p3d = latLonToXYZ(m.lat, m.lon, R);
     const r = rotateY(p3d, rot);
     if (r.z < 0) return;
     const p = project(r);
     const isHovered = hoveredIdx === i;
-    const alpha = 0.35 + (r.z / R) * 0.65;
+    const alpha = 0.4 + (r.z / R) * 0.6;
 
-    // Dot
     ctx.beginPath();
-    ctx.arc(p.sx, p.sy, isHovered ? 5 : 3, 0, Math.PI * 2);
+    ctx.arc(p.sx, p.sy, isHovered ? 6 : 3.5, 0, Math.PI * 2);
     ctx.fillStyle = isHovered ? '#c8b89a' : `rgba(200,184,154,${alpha})`;
     ctx.fill();
 
     if (isHovered) {
       ctx.beginPath();
-      ctx.arc(p.sx, p.sy, 10, 0, Math.PI * 2);
-      ctx.strokeStyle = 'rgba(200,184,154,0.25)';
+      ctx.arc(p.sx, p.sy, 12, 0, Math.PI * 2);
+      ctx.strokeStyle = 'rgba(200,184,154,0.3)';
       ctx.lineWidth = 1;
       ctx.stroke();
     }
 
-    // Name label
-    const fontSize = isHovered ? 11 : 9;
-    ctx.font = `${isHovered ? '500' : '400'} ${fontSize}px Helvetica Neue, Arial, sans-serif`;
-    ctx.fillStyle = isHovered ? '#fff' : `rgba(200,184,154,${alpha * 0.9})`;
+    const fontSize = isHovered ? 13 : 11;
+    ctx.font = `${isHovered ? '600' : '400'} ${fontSize}px Helvetica Neue, Arial, sans-serif`;
+    ctx.fillStyle = isHovered ? '#fff' : `rgba(220,210,190,${alpha})`;
     ctx.textAlign = p.sx > cx ? 'left' : 'right';
     ctx.textBaseline = 'middle';
     const label = m.rank === 86 ? `★ ${m.name}` : m.name;
-    ctx.fillText(label, p.sx + (p.sx > cx ? 10 : -10), p.sy);
+    ctx.fillText(label, p.sx + (p.sx > cx ? 12 : -12), p.sy);
   });
 }
 
@@ -305,7 +298,7 @@ function getHovered(mx, my) {
     if (r.z < 0) continue;
     const p = project(r);
     const dx = mx - p.sx, dy = my - p.sy;
-    if (Math.sqrt(dx * dx + dy * dy) < 18) return i;
+    if (Math.sqrt(dx * dx + dy * dy) < 20) return i;
   }
   return -1;
 }
